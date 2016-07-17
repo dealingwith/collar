@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Collar for Trello",
+  "short_name": "Collar",
+  "version": "1.0",
+  "description": "Toggle column display on Trello boards.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://trello.com/*"],
+      "js": ["jquery-3.1.0.min.js", "collar.js"],
+      "css": ["collar.css"],
+      "run_at": "document_end"
+    }
+  ]
+}

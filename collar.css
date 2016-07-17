@@ -1,0 +1,43 @@
+/* these minimize the cols 
+   and hide appropriate elements */
+.list-wrapper.collared {
+  width: 63px;
+  overflow: hidden
+}
+.collared .list-header {
+  height: 15px;
+  min-height: 15px;
+  overflow: hidden
+}
+.collared .list-cards, 
+.collared textarea,
+.collared .open-card-composer,
+.collared .list-header-extras-menu {
+  visibility: hidden;
+  overflow: hidden
+}
+/* the button */
+.collar-button {
+  color: #999;
+  cursor: pointer;
+  float: left;
+  font-family: -apple-system, Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  padding: 4px;
+  width: 20px;
+}
+.collar-button:hover {
+  background: #cdd2d4;
+  border-radius: 3px;
+  color: #111;
+}
+.collar-button::before {
+  content: "⇠";
+}
+.collared .collar-button::before {
+  content: "⇢";
+}
+/* button affordance */
+textarea.list-header-name {
+  width: 90%;
+}
