@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Collar for Trello",
   "short_name": "Collar",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Toggle column display on Trello boards.",
   "icons": {
     "16": "icon16.png",
